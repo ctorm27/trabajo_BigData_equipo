@@ -1,0 +1,27 @@
+---
+title: EL GRUPO DE 2 
+image: image.png
+about: 
+  template: jolla
+  image-width: 16em 
+  image-shape: rounded
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/ctorm27
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    fig_caption: true
+    code_folding: hide
+    code-tols: true
+    css: my_styles.css
+---
+Hola, somos Manu y Cristy.
+      
+Esta web sirve para presentar el trabajo en equipo de la asignatura "Programación y manejo de datos en la era del Big Data", optativa de GECO en la Facultad de Economía de la Universitat de València.
+
+Puedes encontrar la web de la asignatura [aquí](https://perezp44.github.io/intro-ds-23-24-web/){target="_blank"} y los trabajos de mis compañeros de curso puedes verlos [aquí](https://perezp44.github.io/intro-ds-23-24-web/05-trabajos-estudiantes.html){target="_blank"}.
+
+Nuestro trabajo se titula "Hits Spotify 2023 y el caso de Feid". El objetivo es extraer conclusiones sobre los temas más escuchados utilizando datos de Spotify y otras plataformas. Analizaremos variables como la bailabilidad, la energía, la valentía, entre otras, y su relación con el éxito durante el año 2023. Además, nos sumergiremos en el comportamiento detallado de las canciones de un solo artista, Feid.
