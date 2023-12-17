@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<link href="./imagenes/spo.jpeg" rel="icon" type="image/jpeg">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.3.450">
+
+  <meta name="author" content="Manuel Gimeno (magilli@alumni.uv.es)">
+  <meta name="author" content="Cristina Tormos (tordela@alumni.uv.es)">
+  <title>Hits Spotify 2023 y el caso de Feid</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="site_libs/htmlwidgets-1.6.3/htmlwidgets.js"></script>
+  <script src="site_libs/plotly-binding-4.10.3/plotly.js"></script>
+  <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+  <script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+  <link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+  <script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+  <link href="site_libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
+</head>
+<body class="quarto-dark">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-color="#00FFFF" class="quarto-title-block center">
+  <h1 class="title">Hits Spotify 2023 y el caso de Feid</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Manuel Gimeno (magilli@alumni.uv.es) 
+</div>
+</div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Cristina Tormos (tordela@alumni.uv.es) 
+</div>
+</div>
+</div>
+
+  <p class="date">20/12/23</p>
+</section>
+<section>
+<section id="introducción" class="title-slide slide level2 center">
+<h2>Introducción</h2>
+<p>Nuestra presentación se divide en dos partes: primero, un análisis de las tendencias musicales de 2023 con datos de Spotify, destacando variables como “bailabilidad” y “energía”. Luego, nos enfocamos en el artista Feid, evaluando la popularidad y características musicales de sus canciones. El objetivo es comprender el comportamiento general y específico de las canciones, identificar coincidencias y descubrir tendencias en el panorama musical actual.</p>
+</section>
+<section class="slide level3">
+
+</section></section>
+<section>
+<section id="primera-parte-comportamiento-coincidencias-y-tendencias-de-las-canciones-más-populares-de-2023." class="title-slide slide level2 center">
+<h2>Primera parte: Comportamiento, coincidencias y tendencias de las canciones más populares de 2023.</h2>
+
+</section>
+<section id="análisis-global-de-canciones-y-número-de-reproducciones." class="slide level3">
+<h3>Análisis global de canciones y número de reproducciones.</h3>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Gráfico</a></li><li><a href="#tabset-1-2">Metodología</a></li><li><a href="#tabset-1-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-2-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<ul>
+<li><p><strong>Objetivo</strong>: Analizar cómo se distribuyen las reproducciones entre las canciones populares.</p></li>
+<li><p><strong>Método</strong>: Utilización de un histograma transformado logarítmicamente para una representación clara y detallada de la distribución de las reproducciones.</p></li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<p>Este histograma nos permite agrupar las canciones al dividir las reproducciones hasta en 60 veces. De esta manera, es posible apreciar con qué frecuencia aparecen canciones en el TOP 1000 que tengan un número determinado de reproducciones. A pesar de ser un base de datos caracterizada por la popularidad, dentro de esta exposición existen diferencias de reproducciones, como puede observarse con la forma de campana de Gauss que ofrece le histograma.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="popularidad-de-canciones-por-mes-de-lanzamiento" class="slide level3">
+<h3>Popularidad de canciones por mes de lanzamiento</h3>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Gráfico</a></li><li><a href="#tabset-2-2">Metodología</a></li><li><a href="#tabset-2-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-3-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<p>Investigamos también factores como el mes de lanzamiento de las canciones y su influencia en la popularidad. Mediante gráficos de barras analizamos qué meses en particular recogen la mayor cantidad de éxitos, pudiendo entrever estrategias de marketing y tendencias de consumo.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Investigar si el mes de lanzamiento influye en la popularidad de las canciones.</p></li>
+<li><p><strong>Método</strong>: Creación de un gráfico de barras para mostrar la cantidad de canciones populares lanzadas cada mes.</p></li>
+</ul>
+</div>
+<div id="tabset-2-3">
+<p>Con este gráfico de barras observamos que los meses de lanzamiento que aglutinan las canciones más populares son los meses de enero y mayo. Esta agrupación destacada evidencia una concentración de canciones alrededor de dos meses que, con toda seguridad, han sido seleccionados de manera previa por las discográficas para generar un impacto superior debido a eventos y tendencias concretas que se desarrollan en el sector musical.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="número-de-reproducciones-por-cantidad-de-artistas-participantes" class="slide level3">
+<h3>Número de reproducciones por cantidad de artistas participantes</h3>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Gráfico</a></li><li><a href="#tabset-3-2">Metodología</a></li><li><a href="#tabset-3-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-4-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2">
+<ul>
+<li><p><strong>Objetivo</strong>: Explorar la relación entre el número de artistas en una canción y su éxito en términos de reproducciones.</p></li>
+<li><p><strong>Método</strong>: Uso de un gráfico de dispersión para visualizar esta relación, con una transformación logarítmica en el eje de las reproducciones.</p></li>
+</ul>
+</div>
+<div id="tabset-3-3">
+<p>Este gráfico de dispersión deja muy a las claras que los mayores éxitos en cuanto a cantidad de ellos mismos se produce con un solo artista como protagonista, siendo este un resultado esperado. Sin embargo, al mismo tiempo, también vemos que los temas musicales lanzados por una sola persona son los que mayor cantidad de reproducciones ofrecen. No existe un dato extremo o “outlier” que supere a los temas populares protagonizados por un artista en solitario.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="relación-entre-características-musicales-y-rango-de-popularidad-por-cuartiles" class="slide level3">
+<h3>Relación entre características musicales y rango de popularidad por cuartiles</h3>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Gráfico</a></li><li><a href="#tabset-4-2">Metodología</a></li><li><a href="#tabset-4-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-5-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2">
+<p>Una parte significativa del estudio la dedicamos a explorar de qué forma características específicas de las canciones como la “bailabilidad”, la “energía” y la “positividad” se correlacionan con su éxito en términos de reproducciones. Al dividir las canciones en cuartiles según su número de reproducciones, es posible destacar utilizando gráficos de caja y comparar las distribuciones de estas características musicales dentro de cada cuartil. Este análisis detallado proporciona información sobre qué atributos musicales son más importantes en las canciones de mayor éxito.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Examinar la relación entre la popularidad de las canciones (medida en reproducciones) y sus características musicales (“bailabilidad”, “energía”, “positividad”).</p></li>
+<li><p><strong>Método</strong>: Clasificación de las canciones en cuartiles según sus reproducciones y posterior análisis de las características musicales para cada cuartil mediante gráficos de caja.</p></li>
+</ul>
+</div>
+<div id="tabset-4-3">
+<p>Los resultados de estos gráficos de cajas son sorprendentes. Curiosamente, el cuartil donde se aglutinan las canciones más popualres (es decir, el grupo de 75%-100%) es el que dispone el rango de “positividad” más bajo, tanto en su máximo como en su mínimo. Los valores de “bailabilidad” y “energía” también son sensiblemente inferiores. Esta situación puede deberse a las tendencias musicales actuales.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="análisis-de-la-correlación-entre-características-musicales-y-presencia-en-listas-de-reproducción" class="slide level3">
+<h3>Análisis de la correlación entre características musicales y presencia en listas de reproducción</h3>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Gráfico 1:</a></li><li><a href="#tabset-5-2">Gráfico 2:</a></li><li><a href="#tabset-5-3">Gráfico 3:</a></li><li><a href="#tabset-5-4">Metodología</a></li><li><a href="#tabset-5-5">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-6-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-7-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-3">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-8-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-4">
+<p>En este caso buscamos averiguar si las características musicales específicas —bailabilidad, energía y positividad— de las canciones se correlacionan con su presencia en listas de reproducción en distintas plataformas de streaming musical (Spotify, Apple Music y Deezer).</p>
+<ul>
+<li><p><strong>Objetivo</strong>: El análisis busca identificar si ciertas características musicales están más asociadas con una mayor inclusión en listas de reproducción en cada plataforma.</p></li>
+<li><p><strong>Método</strong>: Normalización de los datos para una correcta comparación y gráficas de dispersión para una mejor visualización.</p></li>
+</ul>
+</div>
+<div id="tabset-5-5">
+<p>Estos gráficos de dispersión no han arrojado una gran diferenciación entre el perfil de los usuarios que añaden canciones a sus playlist particulares. La mayor diferencia a simple vista es la de Deezer, pero esta situación puede deberse a que el funcionamiento de la plataforma no fomenta tanto la creación de playlist en comparación con Spotify y Apple Music.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="análisis-de-canciones-por-clusters" class="slide level3">
+<h3>Análisis de canciones por clusters</h3>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Gráfico</a></li><li><a href="#tabset-6-2">Metodología</a></li><li><a href="#tabset-6-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-c2a931752ae4f30d7598" style="width:80%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-c2a931752ae4f30d7598">{"x":{"visdat":{"2d0438cca14e":["function () ","plotlyVisDat"]},"cur_data":"2d0438cca14e","attrs":{"2d0438cca14e":{"x":{},"y":{},"z":{},"text":{},"marker":{"size":10},"mode":"markers","color":{},"colors":["red","blue","green","yellow"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter3d"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Análisis de clusters de canciones","scene":{"xaxis":{"title":"Bailabilidad"},"yaxis":{"title":"Energía"},"zaxis":{"title":"Positividad"}},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[92,81,72,75,56,59,68,53,92,61,88,77,90,59,76,71,83,62,54,74,70,81,87,78,78,75,84,59,68,82,65,71,67,70,54,75,56,85,82,70,84,78,72,95,76,71,69,79,82,82,92,91,84,65,77,52,93,72,87,59,70,89,82,73,65,78,95,90,71,74,82,88,76,66,70,79,82,92,70,68,87,46,80,69,70,74,45,65,71,67,62,60,73,70,69,79,70,87,51,61,70,70,60,58,80,61,83,59,82,70,46,65,81,77,56,70,86,79,77,83,77,96,61,78,82,79,77,90,91,61,91,74,65,51,78,84,76,95,64,78,81,55,72,59,70,75,86,91,68,78,71,71,93,89,87,86,61,85,78,80,82,78,56,85,44,43,84,66,71,71,87,86,69,81,80,88,71,63,74,90,79,90,70,92,59,84,93,85],"y":[58,48,63,68,56,52,59,53,70,58,59,64,59,42,53,60,44,59,40,53,52,60,55,65,63,53,50,48,60,45,55,50,52,54,55,48,55,68,39,43,39,53,59,52,58,56,51,62,62,44,51,58,47,53,58,48,47,47,52,53,48,66,67,57,56,46,69,14,31,45,59,50,56,40,51,68,45,51,64,49,52,28,62,39,41,37,24,47,26,36,43,32,32,57,36,46,56,69,34,55,54,58,47,45,51,51,55,61,61,44,50,47,63,47,55,49,53,36,42,62,30,42,46,52,59,54,32,54,61,64,60,52,60,53,45,51,52,37,44,57,70,44,64,45,58,52,52,56,55,64,44,45,45,64,50,49,38,43,43,62,67,60,47,58,42,38,42,43,60,52,60,62,45,58,56,69,40,43,58,51,59,50,57,62,60,36,61,43],"z":[66,56,61,57,58,51,49,50,55,53,72,53,40,71,53,67,69,57,50,37,47,39,57,59,50,48,65,52,51,73,51,40,40,37,54,35,53,53,51,42,64,39,45,62,61,59,69,58,47,54,59,63,55,46,69,57,47,40,53,69,77,61,53,44,71,75,43,64,41,51,61,43,49,47,40,60,55,73,57,50,52,60,46,40,85,78,72,70,55,81,59,86,72,57,96,77,39,51,94,48,42,60,45,83,62,76,40,69,52,61,55,46,57,40,58,57,31,70,49,44,82,71,59,65,54,44,60,74,49,65,42,61,60,66,58,54,77,36,76,55,56,86,55,73,71,64,75,32,41,63,55,63,77,59,28,62,53,41,51,45,50,55,56,72,74,60,61,83,67,37,46,43,63,68,55,52,78,56,46,73,64,75,58,53,62,33,62,40],"text":["Sprinter","La Bebe - Remix","TQG","Blank Space","See You Again","Die For You","Starboy","Die For You - Remix","AMARGURA","cardigan","Left and Right (Feat. Jung Kook of BTS)","BESO","Hey Mor","People","Heat Waves","Fast Car","All My Life (feat. J. Cole)","Take Two","Primera Cita","Money Trees","No Role Modelz","Por las Noches","Feliz Cumpleaos Fe","Rauw Alejandro: Bzrp Music Sessions, Vol. 56","Shakira: Bzrp Music Sessions, Vol. 53","Trance (with Travis Scott & Young Thug)","Novo Balan","Stargirl Interlude","Sure Thing","Every Breath You Take - Remastered 2003","Let Me Down Slowly","Reminder","Night Changes","Fin de Semana","Pink + White","Acrs","Phir Aur Kya Chahiye (From \"Zara Hatke Zara Bachke\")","Chanel","Area Codes","Abcdario","FLOWER","Eyes Closed","Superhero (Heroes & Villains) [with Future & Chris Brown]","Players","Stand By Me (feat. Morgan Wallen)","Normal","Bad Habit","69","Nia Bo","Search & Rescue","Link Up (Metro Boomin & Don Toliver, Wizkid feat. BEAM & Toian) - Spider-Verse Remix (Spider-Man: Across the Spider-Verse )","Cupido","Carto B","The Color Violet","Conexes de Mfia (feat. Rich ","MIENTRAS ME CURO DEL CORA","Shorty Party","All Of The Girls You Loved Before","PROVENZA","No Se Va","En Paris","Gato de Noche","Mas Rica Que Ayer","People Pt.2 (feat. IU)","REMIX EXCLUSIVO","La Bebe","CAIRO","Heart To Heart","Peaches (from The Super Mario Bros. Movie)","LET GO","Lovezinho","Neverita","Vista Al Mar","Love Again","Maan Meri Jaan","VIBE (feat. Jimin of BTS)","Shirt","Hey, Mickey!","Te Felicito","I'm Not The Only One","Evoque Prata","Blind","Limbo","You're On Your Own, Kid","Rockin' Around The Christmas Tree","Jingle Bell Rock","Let It Snow! Let It Snow! Let It Snow!","Holly Jolly Christmas","Love Language","A Holly Jolly Christmas - Single Version","Ghost in the Machine (feat. Phoebe Bridgers)","Let It Snow! Let It Snow! Let It Snow!","It's Beginning to Look a Lot Like Christmas (with Mitchell Ayres & His Orchestra)","SPIT IN MY FACE!","Deck The Hall - Remastered 1999","Conceited","Bejeweled","Desesperados","Jingle Bells - Remastered 1999","Far","abcdefu","Is There Someone Else?","Fingers Crossed","We Don't Talk About Bruno","How Do I Make You Love Me?","MONTERO (Call Me By Your Name)","MONEY","Toxic","Malvad","Entre Nosotros (Remix) [con Nicki Nicole]","A Tale By Quincy","I AM WOMAN","Todo De Ti","Meet Me At Our Spot","L","Life Goes On","Sad Girlz Luv Money Remix (feat. Kali Uchis)","Butter","pushin P (feat. Young Thug)","You Right","LA FAMA (with The Weeknd)","Peru","HEARTBREAK ANNIVERSARY","2055","Dance Monkey","RAPSTAR","Memories","25k jacket (feat. Lil Baby)","Lost","she's all i wanna be","HUMBLE.","Numb Little Bug","Worst Day","Hrs and Hrs","Thinking Out Loud","Do We Have A Problem?","Seo","Starlight","Hati-Hati di Jalan","DANA","Yo Voy (feat. Daddy Yankee)","Chale","DARARI","Ya No Somos Ni Seremos","jealousy, jealousy","Closer","Somebody That I Used To Know","First Class","In My Head","Vampiro","That's Hilarious","Soy El Unico","sentaDONA (Remix) s2","Sigue","Fim de Semana no Rio","Ain't Shit","Love Yourself","Rich Spirit","Count Me Out","Andrea","Dos Mil 16","Otro Atardecer","Worldwide Steppers","Agosto","Rich - Interlude","Auntie Diaries","Beautiful Girl","Savior - Interlude","Pasoori","I Tried to Tell Y'all","ZOOM","FEARLESS","Daylight","Die Young (feat. 347aidan)","Last Last","Hot Shit (feat. Ye & Lil Durk)","Baile no Morro","cmo dormi","Si Te La Encuentras Por Ah","THE SHADE","El Rescate","BILLIE EILISH.","Ferxxo 100","Typa Girl","Casei Com a Putaria","On BS","Privileged Rappers","BackOutsideBoyz"],"marker":{"color":"rgba(255,0,0,1)","size":10,"line":{"color":"rgba(255,0,0,1)"}},"mode":"markers","type":"scatter3d","name":"Cluster 1","textfont":{"color":"rgba(255,0,0,1)"},"error_y":{"color":"rgba(255,0,0,1)"},"error_x":{"color":"rgba(255,0,0,1)"},"line":{"color":"rgba(255,0,0,1)"},"frame":null},{"x":[51,51,44,48,71,72,45,43,64,51,51,58,71,34,63,50,50,62,53,49,56,56,51,35,63,60,56,45,60,45,45,60,60,55,53,34,37,48,61,53,78,77,62,66,59,43,73,80,49,34,56,60,44,44,51,60,70,59,32,54,45,70,59,64,40,36,70,56,58,36,53,75,66,25,41,47,46,58,41,40,47,49,63,39,58,70,65,34,35,72,33,36,60,60,67,23,43,54,80,66,64,41,66,27,28,64,31,56,29,59,63,40,57,83,73,44,66,85,46,42,59,63,39,80,45,40,73,60,45,52,64,44,42,45,67,71,75,57,35,53,37,57,46,31,67,31,44,39,56,44,28,65,42,41,59,67,68,45,72,59,70,57,68,61,79,50,61,73,36,38,37,49,53,58,47,37,70,51,63,88,56,58,56,63,51,56,52,42,49,51,88,72,56,37,34,56,37,64,70,52,65,66,57,49,91,80,75,66,73,48,34,62,64,60,42],"y":[53,43,9,42,61,64,54,66,62,53,59,48,47,57,34,64,41,53,47,35,55,66,44,30,54,45,55,59,35,62,37,27,53,53,34,56,47,41,48,67,30,55,62,40,60,74,44,48,55,51,52,37,32,41,33,57,41,64,74,48,60,73,38,37,56,57,55,43,38,28,36,25,57,30,25,43,64,60,61,48,52,66,55,43,62,34,47,63,23,51,61,15,57,20,59,25,44,39,54,32,40,64,61,49,41,70,24,67,33,43,52,29,58,41,57,60,68,37,48,36,52,35,45,55,60,29,45,33,57,61,37,48,26,33,47,61,46,40,61,31,67,66,43,86,54,63,38,55,46,20,20,58,44,40,46,46,43,67,46,62,61,27,58,38,55,50,62,54,54,66,24,37,43,36,50,56,44,29,51,56,54,46,54,62,63,45,48,20,40,68,49,46,53,66,31,44,27,60,56,60,53,58,37,74,55,28,50,35,61,31,16,44,53,39,24],"z":[32,32,14,44,17,17,13,28,10,22,14,27,24,32,36,20,45,19,34,17,39,24,18,12,22,17,20,33,24,24,10,43,13,42,12,24,17,37,20,24,5,28,7,32,26,14,10,23,4,25,42,13,27,36,27,10,35,15,17,19,17,6,22,18,45,12,34,20,26,28,40,18,16,17,9,25,34,4,9,23,15,24,20,24,17,31,36,33,38,33,39,22,23,19,22,19,42,41,15,19,4,27,19,10,13,14,31,16,12,21,21,7,36,11,14,22,18,22,23,47,33,31,36,21,19,19,31,11,12,7,8,22,33,27,29,14,19,30,23,31,17,23,43,4,8,31,18,45,19,8,26,11,33,23,23,37,33,27,22,30,22,6,24,20,22,41,24,26,30,20,14,50,14,27,7,27,31,39,29,15,40,30,20,29,21,25,28,32,14,5,8,18,43,28,22,21,17,4,26,24,24,24,24,13,23,16,11,12,25,15,39,25,11,24,7],"text":["vampire","Daylight","What Was I Made For? [From The Motion Picture \"Barbie\"]","I Wanna Be Yours","Creepin'","El Cielo","Another Love","Yellow","Karma","Enchanted (Taylor's Version)","golden hour","Here With Me","Unholy (feat. Kim Petras)","Until I Found You (with Em Beihold) - Em Beihold Version","Novidade na ","Back To December (Taylor's Version)","Someone You Loved","Dont Bl","Still With You","Say Yes To Heaven","Snooze","Summertime Sadness","Tak Segampang Itu","lovely - Bonus Track","Calling (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee, NAV, feat. A Boogie Wit da Hoodie)","Perfect","Romantic Homicide","Somewhere Only We Know","Those Eyes","Enchanted","The Night We Met","When I Was Your Man","Am I Dreaming (Metro Boomin & A$AP Rocky, Roisee)","Do I Wanna Know?","Creep","Car's Outside","Apocalypse","Shut up My Moms Calling","Annihilate (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee, Lil Wayne, Offset)","Angel Pt 1 (feat. Jimin of BTS, JVKE & Muni Long)","Self Love (Spider-Man: Across the Spider-Verse) (Metro Boomin & Coi Leray)","All The Way Live (Spider-Man: Across the Spider-Verse) (Metro Boomin & Future, Lil Uzi Vert)","Karma (feat. Ice Spice)","Snow On The Beach (feat. More Lana Del Rey)","Hummingbird (Metro Boomin & James Blake)","Lilith (feat. SUGA of BTS) (Diablo IV Anthem)","Lavender Haze","Efecto","Just Wanna Rock","Until I Found You","Rich Flex","Easy On Me","Glimpse of Us","Never Felt So Alone","ceilings","Double Fantasy (with Future)","Komang","METAMORPHOSIS","I Was Never There","Don't ever say love me (feat. RM of BTS)","Call Out My Name","Lose Yourself - Soundtrack Version","Something in the Orange","Midnight Rain","Say You Won't Let Go","The Hills","Low","Sial","Kahani Suno 2.0","Nobody Gets Me","Sem Aliana no ","Revenge","After Hours","Lift Me Up - From Black Panther: Wakanda Forever - Music From and Inspired By","TV","Heather","WAIT FOR U (feat. Drake & Tems)","After Dark","MIDDLE OF THE NIGHT","Atlantis","Die For You","Niagara Falls (Foot or 2) [with Travis Scott & 21 Savage]","Running Up That Hill (A Deal With God)","Dream On","WORTH NOTHING","Evergreen (You Didnt Deserve Me A","Shut up My Moms Calling - (Sped Up)","All I Want for Christmas Is You","It's Beginning To Look A Lot Like Christmas","Snowman","Happy Xmas (War Is Over)","The Christmas Song (Merry Christmas To You) - Remastered 1999","Do They Know It's Christmas? - 1984 Version","Special","Open Arms (feat. Travis Scott)","White Christmas","Gone Girl","I Hate U","Raindrops (Insane) [with Travis Scott]","Snow On The Beach (feat. Lana Del Rey)","Maroon","Here We Go Again (feat. Tyler, the Cr","Need To Know","Dawn FM","Starry Eyes","Lo Siento BB:/ (with Bad Bunny & Julieta Venegas)","Happier Than Ever","Moth To A Flame (with The Weeknd)","traitor","drivers license","All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)","It'll Be Okay","Softcore","Super Gremlin","Dakiti","deja vu","Lost in the Fire","Knife Talk (with 21 Savage ft. Project Pat)","Phantom Regret by Jim","Dos Oruguitas","Daddy Issues","Miserable Man","happier","Praise God","Before You Go","favorite crime","Pope Is a Rockstar","Bored","Happier Than Ever - Edit","Talking To The Moon","you broke me first","Lucid Dreams","All of Me","Arcade","Fair Trade (with Travis Scott)","family ties (with Kendrick Lamar)","Streets","Shallow","Boyfriend","The Joker And The Queen (feat. Taylor Swift)","All For Us - from the HBO Original Series Euphoria","Formula","Mount Everest","Down Under (feat. Colin Hay)","Swim","Still Don't Know My Name","Christmas Tree","When I R.I.P.","Forever","Something In The Way - Remastered 2021","I'm Tired - From \"Euphoria\" An Original HBO Series","Nail Tech","this is what falling in love feels like","Bohemian Rhapsody - Remastered 2011","Hope","Demasiadas Mujeres","Tom's Diner","Fuera del mercado","Chance","Cool for the Summer","Right On","Falling","Still Life","Photograph","Un Ratito","Un Verano Sin Ti","Callaita","Mr. Morale","In The Stars","Thousand Miles","Crown","Mother I Sober (feat. Beth Gibbons of Portishead)","With you","San Lucas","This Love (Taylors Ve","Good Looking","Flowers","Matilda","For Youth","Cash In Cash Out","Little Freak","Satellite","Love Of My Life","So Good","Hold My Hand","Me and Your Mama","SLOW DANCING IN THE DARK","Boyfriends","Tak Ingin Usai","Massive","Sticky","STAYING ALIVE (feat. Drake & Lil Baby)","Come Back Home - From \"Purple Hearts\"","Bound 2","Static","The Scientist","Sparks","Selfish","Poland","THE LONELIEST","Bye Bye","Miss You","we fell in love in october","I Really Want to Stay at Your House","Major Distribution","Vigilante Shit","Question...?","Mastermind","Circo Loco","Labyrinth","Sweet Nothing","Con La Brisa","Broke Boys","My Mind & Me","Bigger Than The Whole Sky"],"marker":{"color":"rgba(0,0,255,1)","size":10,"line":{"color":"rgba(0,0,255,1)"}},"mode":"markers","type":"scatter3d","name":"Cluster 2","textfont":{"color":"rgba(0,0,255,1)"},"error_y":{"color":"rgba(0,0,255,1)"},"error_x":{"color":"rgba(0,0,255,1)"},"line":{"color":"rgba(0,0,255,1)"},"frame":null},{"x":[55,65,67,85,57,78,64,63,52,74,64,61,60,56,67,60,50,86,56,61,62,49,68,48,59,91,82,68,43,68,50,62,81,61,61,65,64,55,51,64,55,42,52,65,54,66,61,73,77,33,56,74,70,63,57,63,65,84,62,81,67,73,54,71,78,47,83,67,62,50,80,68,77,76,69,75,56,80,59,62,48,73,67,72,76,71,63,58,50,64,59,66,84,59,50,70,59,49,53,55,74,75,53,60,80,58,53,56,64,64,57,44,51,71,87,40,81,64,67,58,46,58,65,74,46,65,51,34,53,59,49,47,89,80,45,83,33,63,76,74,67,53,70,49,74,65,74,75,75,77,53,58,44,63,74,77,59,35,77,68,72,79,73,67,80,46,74,78,75,80,77,73,41,35,60,55,56,81,51,92,47,52,60,31,84,60,78,73,47,62,68,81,80,69,61,39,58,60,70,63,56,79,45,81,78,56,52,55,50,71,66,65,80,63,83,51,83,88,66,61,68,77,54,47,32,72,71,82,85,57,60,68,54,80,44,78,56,44,70,61,55,47,82,67,65,70,81,84,57,74,75,77,48,54,57,61],"y":[72,80,71,62,72,82,73,73,68,84,63,73,79,97,64,91,80,72,73,81,78,62,79,73,76,71,66,76,55,71,90,67,72,69,68,78,81,78,61,87,82,86,85,69,67,71,74,69,63,71,64,63,75,85,66,73,72,77,80,64,78,62,74,70,70,78,69,67,66,76,88,88,88,70,90,76,87,70,82,76,80,86,76,66,79,97,61,67,86,77,74,76,67,56,76,73,65,67,70,90,69,65,81,76,67,68,66,63,89,72,84,77,79,88,83,64,84,65,64,94,78,57,80,74,63,65,66,76,74,94,77,68,74,68,68,80,59,86,77,73,67,79,77,59,73,58,85,76,76,62,73,60,94,68,65,79,63,94,79,73,71,91,76,90,62,83,89,70,74,60,63,74,88,93,89,85,76,78,76,89,80,60,71,88,72,62,74,74,76,73,77,73,65,57,65,77,83,69,71,64,57,84,84,66,74,90,83,78,78,65,79,69,85,70,65,82,82,66,65,90,71,78,79,83,72,72,86,75,80,89,71,76,83,86,92,72,64,67,76,62,64,90,88,77,80,76,70,75,85,67,63,70,84,76,74,67],"z":[58,23,26,22,56,52,43,36,52,35,51,39,48,38,49,23,38,42,48,41,55,42,40,50,48,43,40,14,50,17,37,24,53,45,47,49,54,30,42,31,56,20,20,27,40,48,41,31,36,38,53,36,59,46,41,49,19,52,55,18,24,45,25,58,20,27,25,55,56,44,38,38,35,26,36,55,57,33,56,32,50,22,11,42,46,57,40,46,24,30,20,43,44,44,49,29,49,48,51,40,43,43,61,52,29,42,32,56,25,31,47,38,62,34,20,39,6,44,26,29,53,44,49,51,53,35,51,35,47,60,42,33,48,42,35,47,51,34,44,35,50,50,35,49,53,37,55,36,46,25,55,44,52,49,39,51,56,41,51,29,54,56,52,40,24,62,45,47,53,33,26,54,65,24,40,10,61,53,50,31,50,44,37,30,49,47,53,37,44,46,57,40,24,35,47,28,56,58,54,45,41,48,25,39,40,61,32,50,39,43,58,52,26,60,41,48,32,28,29,32,45,53,45,33,49,36,39,42,42,30,46,54,59,36,41,31,52,44,46,38,46,56,49,49,52,26,48,43,50,22,45,20,55,22,55,32],"text":["Cruel Summer","WHERE SHE GOES","Columbia","fukumean","un x100to","Super Shy","Kill Bill","Like Crazy","Last Night","Rush","Anti-Hero","Frgil (feat. Grupo Front","Style","I'm Good (Blue)","Angels Like You","Baby Don't Hurt Me","Blinding Lights","S91","Overdrive","Sweater Weather","Quevedo: Bzrp Music Sessions, Vol. 52","Viva La Vida","CORAZN VA","Riptide","STAY (with Justin Bieber)","Me Porto Bonito","Makeba","Coco Chanel","Lover","Too Many Nights (feat. Don Toliver & with Future)","Chemical","Mockingbird","New Jeans","Dandelions","Set Fire to the Rain","Mine (Taylor's Version)","Everybody Wants To Rule The World","Tattoo","august","Miracle (with Ellie Goulding)","Watermelon Sugar","Radio","505","Ojitos Lindos","Jimmy Cooks (feat. 21 Savage)","Counting Stars","Ghost","Under The Influence","One Dance","Demons","SNAP","Cheques","Circles","Just The Way You Are","Take Me To Church","You Belong With Me (Taylors Ve","Titi Me Pregunt","Es un Secreto","POLARIS - Remix","Ditto","Hits Different","Piman De","Escapism.","La Jumpa","AMERICA HAS A PROBLEM (feat. Kendrick Lamar)","Unstoppable","Danger (Spider) (Offset & JID)","Oi Balde - Ao Vivo","Mejor Que Yo","Curtains","UNFORGIVEN (feat. Nile Rodgers)","I AM","Super","Shoong! (feat. LISA of BLACKPINK)","Watch This - ARIZONATEARS Pluggnb Remix","Punto G","Lovers Rock","Mami Chula","Set Me Free Pt.2","Like Crazy (English Version)","SORRY NOT SORRY","HAPPY","I Know - PR1SVX Edit","VOID","LA INOCENTE","Murder In My Mind","Gangsta's Paradise","I Love You So","Numb","Tormenta (feat. Bad Bunny)","Miss You","Thinkin B","Private Landing (feat. Justin Bieber & Future)","Apna Bana Le (From \"Bhediya\")","Man Made A Bar (feat. Eric Church)","Red Ruby Da Sleeze","Bloody Mary","98 Braves","Thought You Should Know","In The End","I Like You (A Happier Song) (with Doja Cat)","LA CANCI","Born With A Beer In My Hand","","Moscow Mule","My Universe","Devil Don","LLYLM","TRUSTFALL","STAR WALKIN' (League of Legends Worlds Anthem)","Sex, Drugs, Etc.","Escapism. - Sped Up","Space Song","Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack]","PUNTO 40","How Do I Say Goodbye","Rumble","Yonaguni","Where Are You Now","KICK BACK","Good Days","Kesariya (From \"Brahmastra\")","Agudo Mgi","Payphone","Santa Tell Me","Seek & Destroy","SOS","Christmas (Baby Please Come Home)","F2F","Merry Christmas","Wild Flower (with youjeen)","Smoking on my Ex Pack","Tubaro Te","Tarot","Too Late","Party","On Time (with John Legend)","GAT","Pepas","Gasoline","Infinity","Less Than Zero","Take My Breath","Best Friends","love nwantiti (ah ah ah)","Surface Pressure","THATS WHAT I WANT","Mon Amour - Remix","The Motto","Dont Break My","Oh My God","Love Nwantiti - Remix","Every Angel is Terrifying","Peaches (feat. Daniel Caesar & Giveon)","TO THE MOON","Don't Be Shy","The Family Madrigal","Freaks","Acapulco","thought i was playing","What Else Can I Do?","Sky","Rolling in the Deep","Thunder","The Business","Vai L Em Casa ","No Lie","Astronaut In The Ocean","Take My Breath","Way 2 Sexy (with Future & Young Thug)","C","Enemy - from the series Arcane League of Legends","The Rumbling (TV Size)","Mr. Brightside","Blessed-Cursed","'Till I Collapse","Se Le Ve","Still D.R.E.","Stay Alive (Prod. SUGA of BTS)","The Next Episode","City of Gods","Brividi","Ginseng Strip 2002","Notion","Excuses","Cigarettes","Stan","Problem","Alien Blues","NEW MAGIC WAND","Adore You","Envolver","Freaky Deaky","Mony so","Something Just Like This","O.O","Plan A","When You're Gone","LOVE DIVE","psychofreak (feat. WILLOW)","Angel Baby","Si Quieren Frontear","Golden","N95","Die Hard","Despus de la P","United In Grief","Father Time (feat. Sampha)","Cooped Up (with Roddy Ricch)","Me Fui de Vacaciones","La Corriente","We Cry Together","ULTRA SOLO","El Apag","Dua Lipa","House Of Memories","Stefania (Kalush Orchestra)","PUFFIN ON ZOOTIEZ","Mirror","Paulo Londra: Bzrp Music Sessions, Vol. 23","TUS LGR","Where Did You Go?","10 Things I Hate About You","SPACE MAN","Iris","Music For a Sushi Restaurant","True Love","Villano Antillano: Bzrp Music Sessions, Vol. 51","Belly Dancer","Only Love Can Hurt Like This","Crazy What Love Can Do","295","Master of Puppets (Remastered)","POP!","Layla","MORE","SNAP","die first","Caile","GIVENCHY","ALIEN SUPERSTAR","Mary On A Cross","Don't You Worry","Hold Me Closer","Prohibidox","Talk","XQ Te Pones As","BABY OTAKU","Celestial","California Breeze","Pussy & Millions (feat. Travis Scott)","Spin Bout U","Would've, Could've, Should've","The Astronaut","The Great War","Alone"],"marker":{"color":"rgba(0,255,0,1)","size":10,"line":{"color":"rgba(0,255,0,1)"}},"mode":"markers","type":"scatter3d","name":"Cluster 3","textfont":{"color":"rgba(0,255,0,1)"},"error_y":{"color":"rgba(0,255,0,1)"},"error_x":{"color":"rgba(0,255,0,1)"},"line":{"color":"rgba(0,255,0,1)"},"frame":null},{"x":[80,71,67,71,52,78,86,65,69,85,85,79,80,81,67,56,81,79,56,76,77,71,67,64,84,86,70,77,78,78,63,74,80,77,77,84,82,75,74,49,63,82,80,76,77,93,92,79,74,81,78,47,69,73,50,78,86,68,73,57,65,70,83,54,50,74,57,77,89,80,78,74,66,80,63,78,59,95,84,70,79,77,74,94,90,57,79,76,92,84,82,70,77,80,72,71,70,71,74,65,70,90,73,81,60,77,83,68,61,64,56,57,68,73,79,86,59,87,72,81,72,65,73,84,74,70,88,66,65,81,82,68,77,79,71,80,79,64,74,91,90,95,81,70,82,84,74,24,51,50,67,53,73,75,72,51,72,67,70,63,69,70,65,85,56,77,75,68,71,79,73,63,75,66,73,72,75,67,66,59,53,83,70,86,91,76,73,75,81,79,76,63,53,89,52,52,74,74,72,70,82,69,80,85,63,84,69,90,67,77,93,76,81,86,79,89,89,73,92,74,81,76,87,59,80,77,76,69,53,81,76,83,86,69,58,86,78,79,91,84,87,92,61,84,86,57,81,91,64,82,73,76,56,72,80,82,60,80,73,65,72,83,71,91,83,81,70,70,91,73,81,45,95,85,58,77,81,79,81,77,70,77,67,68,74,77,65,82,78,73,72,80,80,82],"y":[83,74,76,68,73,59,66,74,76,67,68,86,80,71,85,87,68,85,65,50,58,81,88,72,68,96,81,89,73,68,82,76,80,72,62,71,85,63,68,64,93,83,77,72,78,65,66,89,80,77,81,92,71,70,52,83,80,82,77,94,80,63,65,60,89,70,90,73,78,74,84,83,60,78,92,69,89,66,79,84,78,66,73,61,68,59,86,81,62,53,69,68,71,76,78,65,79,73,87,79,79,73,85,79,78,87,83,82,91,80,85,76,81,79,74,79,94,70,63,77,76,95,57,74,73,90,80,84,86,78,74,71,80,86,89,69,79,91,70,57,81,89,90,83,76,69,65,60,81,82,54,77,69,58,87,58,68,72,59,88,71,79,74,81,66,66,84,78,80,70,86,62,86,82,85,68,77,63,69,62,69,73,72,79,66,77,80,61,90,84,84,67,85,82,91,69,66,67,72,74,86,89,69,54,75,70,63,71,75,84,74,62,75,79,52,70,86,83,86,87,63,70,53,74,68,70,80,88,78,83,71,74,79,91,80,80,75,81,72,74,59,57,71,69,65,82,79,96,88,66,81,81,89,82,60,70,84,85,67,72,48,64,81,77,82,93,62,88,82,75,65,90,57,83,91,87,65,65,73,75,59,74,74,92,89,91,66,85,62,91,77,81,67,77],"z":[89,61,83,65,66,76,67,87,82,81,83,96,82,74,78,63,63,96,84,91,75,82,96,88,85,59,86,84,58,70,84,76,92,65,79,96,89,79,68,78,88,69,74,96,74,68,67,92,96,90,70,86,61,87,85,89,74,61,60,84,95,81,93,75,67,76,86,79,67,85,90,61,85,69,75,64,63,78,96,83,58,94,75,71,74,80,82,80,78,88,67,86,84,64,79,80,70,90,79,63,76,96,64,64,77,72,58,81,92,67,72,68,83,65,66,68,78,82,96,97,59,72,88,72,64,84,82,74,80,82,62,83,65,59,83,71,68,61,89,97,76,91,59,92,88,70,88,76,69,96,88,84,71,74,91,87,78,69,92,93,94,91,82,64,68,74,85,72,59,79,79,85,93,76,60,67,74,78,63,72,75,59,76,86,79,63,66,96,92,79,58,76,66,77,73,68,79,65,67,65,80,70,62,92,75,90,91,79,74,76,61,92,83,89,86,75,89,68,62,59,68,96,82,70,71,68,81,90,66,59,63,63,91,90,71,97,83,87,73,72,93,78,66,74,67,71,77,91,80,82,59,79,68,70,74,76,68,77,88,88,90,90,90,63,56,61,97,87,59,62,72,67,83,80,68,94,70,66,90,71,97,74,72,80,71,78,79,75,75,65,92,82,81,67],"text":["Seven (feat. Latto) (Explicit Ver.)","LALA","Ella Baila Sola","Flowers","As It Was","Cupid - Twin Ver.","Classy 101","LADY GAGA","I Can See You (Taylors Version) (From The ","Peso Pluma: Bzrp Music Sessions, Vol. 55","Popular (with Playboi Carti & Madonna) - The Idol Vol. 1 (Music from the HBO Original Series)","SABOR FRESA","Calm Down (with Selena Gomez)","MOJABI GHOST","Dance The Night (From Barbie The Album)","TULUM","Los del Espacio","TQM","El Azul","Sunflower - Spider-Man: Into the Spider-Verse","Barbie World (with Aqua) [From Barbie The Album]","I Ain't Worried","(It Goes Like) Nanana - Edit","Moonlight","La Bachata","T","Boy's a liar Pt. 2","BABY HELLO","Yandel 150","El Merengue","MONTAGEM - FR PUNK","What It Is (Solo Version)","Cold Heart - PNAU Remix","Bones","LAGUNAS","Rara Vez","VAGABUNDO","LUNA","Nonsense","Que Vuelvas","Can't Hold Us (feat. Ray Dalton)","Queencard","OMG","Tere Vaaste (From \"Zara Hatke Zara Bachke\")","Believer","Gol Bolinha, Gol Quadrado 2","Without Me","QUEMA","El Gordo Trae El Mando","Mi Bello Angel","Bye","Danza Kuduro","Nosso Quadro","Locked Out Of Heaven","Un Finde | CROSSOVER #2","PRC","Gasolina","Save Your Tears","We Found Love","","Shake It Off","Why'd You Only Call Me When You're High?","Shape of You","Bebe Dame","Better Than Revenge (Taylor's Version)","Have You Ever Seen The Rain?","Take On Me","AMG","S-Class","Obsessed","Las Morras","CHORRITO PA LAS ANIMAS","Ch y la Pizza","Bite Me","Seu Brilho Sumiu - Ao Vivo","CUFF IT","Erro Gostoso - Ao Vivo","The Real Slim Shady","MERCHO","Haegeum","X SI VOLVEMOS","Cupid","Cupid  Twin Ver. (FIFTY FIFTY)  Spe","Slut Me Out","Princess Diana (with Nicki Minaj)","Di Que Si","Shivers","Igualito a Mi Ap","DESPECH","Made You Look","Shut Down","Rosa Pastel","Sunroof","Superman","Arcngel: Bzrp Music Sessions, Vol","DOGTOOTH","10:35","Late Night Talking","Le","Save Your Tears (with Ariana Grande) (Remix)","Dijeron Que No La Iba Lograr","If We Ever Broke Up","You Proof","Malas Decisiones","Dark Red","Marisola - Remix","LOKERA","on the street (with J. Cole)","One Thing At A Time","Aint Tha","Everything I Love","Heaven","I Wrote The Book","SPIT IN MY FACE!","PLAYA DEL INGL","PERO T","Hype Boy","Monoton","WANDA","Zona De Perigo","Enemy (with JID) - from the series Arcane League of Legends","Bombonzinho - Ao Vivo","Qu Ago","About Damn Time","Besos Moja2","I'm Not Here To Make Friends","ANTIFRAGILE","Boy's a liar","Boy With Luv (feat. Halsey)","Calm Down","Jhoome Jo Pathaan","Mu","Besharam Rang (From \"Pathaan\")","One Kiss (with Dua Lipa)","Sugar Rush Ride","Pink Venom","Don't Start Now","Eu Gosto Assim - Ao Vivo","INDUSTRY BABY (feat. Jack Harlow)","Doja","Gatita","Super Freaky Girl","Bad Habits","Levitating (feat. DaBaby)","Woman","Ferrari","Last Christmas","It's the Most Wonderful Time of the Year","Underneath the Tree","Feliz Navidad","Mistletoe","Sleigh Ride","Used (feat. Don Toliver)","Wonderful Christmastime - Edited Version / Remastered 2011","Merry Christmas Everyone","Driving Home for Christmas - 2019 Remaster","Notice Me","My Only Wish (This Year)","Antidepresan","You Make It Feel Like Christmas (feat. Blake Shelton)","Run Rudolph Run - Single Version","Sacrifice","Out of Time","Do It To It","good 4 u","Kiss Me More (feat. SZA)","I Heard You're Married (feat. Lil Wayne)","One Right Now (with The Weeknd)","Beggin","Medallo","Volv","Smokin Out The Window","Tacones Rojos","Tiago PZK: Bzrp Music Sessions, Vol. 48","Nostl","Better Days (NEIKED x Mae Muller x Polo G)","Dynamite","Salimo de Noche","Volando - Remix","Leave The Door Open","Love Grows (Where My Rosemary Goes)","ELEVEN","Mood (feat. Iann Dior)","DANCE CRIP","Get Into It (Yuh)","Sobrio","positions","I WANNA BE YOUR SLAVE","The Feels","OUT OUT (feat. Charli XCX & Saweetie)","Ley Seca","Every Summertime","The Nights","Qu M","Smells Like Teen Spirit - Remastered 2021","Bar","AM Remix","Polaroid Love","Leave Before You Love Me (with Jonas Brothers)","Permission to Dance","Friday (feat. Mufasa & Hypeman) - Dopamine Re-Edit","When Im Gone (with Katy ","Esquea-Me Se For C","Min","S","MAMIII","Light Switch","In Da Club","Cay La Noche (feat. Cruz Cafun, Abhir Hathi, Bejo, EL IMA)","California Love - Original Version (Explicit)","Forgot About Dre","Mujeriego","Contection","A Tu Merced","212","Bussin","Malvada","Mal Feito - Ao Vivo","Gospel (with Eminem)","La Santa","Sweetest Pie","Bam Bam (feat. Ed Sheeran)","Una Noche en Medell","Residente: Bzrp Music Sessions, Vol. 49","Jordan","Thinking with My Dick","La Zona","Levitating","Wake Me Up - Radio Edit","X LTIMA","Wait a Minute!","Pantysito","Me Arrepent","RUMBAT","MANIAC","There's Nothing Holdin' Me Back","IDGAF (with blackbear)","Get Lucky - Radio Edit","Nobody Like U - From \"Turning Red\"","About Damn Time","Yo No Soy Celoso","Silent Hill","Savior","Un Coco","Aguacero","Purple Hearts","Ensame ","That That (prod. & feat. SUGA of BTS)","SUPERMODEL","Honest (feat. Don Toliver)","SloMo","The Heart Part 5","Yet To Come","Run BTS","Vegas (From the Original Motion Picture Soundtrack ELVIS)","Potion (with Dua Lipa & Young Thug)","Born Singer","La Llevo Al Cielo (Ft. engo F","Pass The Dutchie","Grapejuice","Keep Driving","Cinema","Daydreaming","Numb","Nos Comemos (feat. Ozuna)","Antes de Perderte","En El Radio Un Cochinero","BREAK MY SOUL","ULTRA SOLO REMIX","Betty (Get Money)","Ojos Marrones","Sweet Child O' Mine","Ai Preto","La Loto","Afraid To Feel","Bad Decisions (with BTS & Snoop Dogg)","Attention","Heartless","Stay With Me (with Justin Timberlake, Halsey, & Pharrell)","Siempre Pendientes","JGL","Pipoco","Forget Me","After LIKE","B.O.T.A. (Baddest Of Them All) - Edit","Talk that Talk","KU LO SA - A COLORS SHOW","Sin Se","Lady Mi Amor","Nxde","2 Be Loved (Am I Ready)","Bamba (feat. Aitch & BIA)","A Veces (feat. Feid)","En La De Ella"],"marker":{"color":"rgba(255,255,0,1)","size":10,"line":{"color":"rgba(255,255,0,1)"}},"mode":"markers","type":"scatter3d","name":"Cluster 4","textfont":{"color":"rgba(255,255,0,1)"},"error_y":{"color":"rgba(255,255,0,1)"},"error_x":{"color":"rgba(255,255,0,1)"},"line":{"color":"rgba(255,255,0,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-6-2">
+<p>Por último, uno de los aspectos más importantes del trabajo ha sido poder agrupar las canciones más populares por clusters. Estos clusters tienen en cuenta las tres características cualitativas de las canciones para Spotify, como son la “bailabilidad”, la “energía” y la “positividad”. Esta clasificación sirve para encontrar canciones con elementos comunes y así poder concretar con mayor precisión qué elementos son necesarios para que un tema musical pueda llegar a ser extremadamente popular.</p>
+<p><strong>Objetivo</strong>: Agrupar canciones con características similares y analizar estos grupos.</p>
+<p><strong>Método</strong>: Uso del algoritmo k-means para clasificar las canciones en clusters según características musicales, así como visualización mediante un gráfico 3D.</p>
+</div>
+<div id="tabset-6-3">
+<p>Más que sacar conclusiones, este gráfico, usando el algoritmo kmeans, nos permite agrupar canciones por las variables “bailabilidad”, “energía” y “positivdad” y trazar así una relación entre todas ellas. Esta información por clusters puede ser muy útil como investigación de qué elementos debe tener una canción para ser de éxito y, al mismo tiempo, cómo debe ser en términos musicales si se quiere encuadrar dentro de un grupo determinado. Con herramientas de inteligencia artificial, esta información podría ser útil para crear canciones usando como modelos los temas de cada cluster.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level3">
+
+</section></section>
+<section>
+<section id="segunda-parte-ferxxo-en-el-foco.-aproximación-a-un-cantante-de-éxito" class="title-slide slide level2 center">
+<h2>Segunda parte: Ferxxo en el foco. Aproximación a un cantante de éxito</h2>
+
+</section>
+<section id="biografia-del-artista" class="slide level3">
+<h3>Biografia del artista</h3>
+<p>Salomón Villada Hoyos (Medellín, 19 de agosto de 1992), mejor conocido por su nombre artístico Feid o por su alter ego Ferxxo, es un cantante, compositor y productor discográfico colombiano.</p>
+<p>Con una energía positiva, muy buen rollo y colaboraciones junto a varios artistas, Feid nos trae la banda sonora urbana del 2023.</p>
+
+<img data-src="https://comunidad.instanticket.es/wp-content/uploads/Feid-regresa-a-Espana-con-Eurotrip-Vol-2.jpg" class="r-stretch quarto-figure-center"><p class="caption">Feid</p></section>
+<section id="análisis-de-distribución-de-canciones-por-artista" class="slide level3">
+<h3>Análisis de distribución de canciones por artista</h3>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Gráfico 1</a></li><li><a href="#tabset-7-2">Gráfico 2</a></li><li><a href="#tabset-7-3">Metodología</a></li><li><a href="#tabset-7-4">Resultados</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-11-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-7-2">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-12-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-7-3">
+<p>Adentrándonos en el análisis de la distribución de canciones por artista, destacamos la proporción de canciones de Ferxxo en comparación con otros artistas entre las canciones más populares de 2023. Utilizamos un gráfico circular para ilustrar de forma clara y sencilla la diversidad artística.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Examinar cómo se distribuyen las canciones entre Feid y otros artistas.</p></li>
+<li><p><strong>Método</strong>: Uso de gráficos circulares para visualizar la proporción de canciones de Feid en comparación con otros artistas.</p></li>
+</ul>
+</div>
+<div id="tabset-7-4">
+<p>Con los gráficos circulares, podemos observar la significativa presencia de Ferxxo en el panorama musical de 2023. Esto nos sugiere que se encuentra entre las preferencias de los oyentes.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="éxitos-en-el-top-10-las-10-canciones-más-escuchadas-de-ferxxo-en-2023" class="slide level3">
+<h3>Éxitos en el TOP 10: Las 10 canciones más escuchadas de Ferxxo en 2023</h3>
+<div class="panel-tabset">
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Tabla</a></li><li><a href="#tabset-8-2">Metodología</a></li><li><a href="#tabset-8-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+
+<div id="cjrvketnvy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#cjrvketnvy table {
+  font-family: 'Amatic SC', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#cjrvketnvy thead, #cjrvketnvy tbody, #cjrvketnvy tfoot, #cjrvketnvy tr, #cjrvketnvy td, #cjrvketnvy th {
+  border-style: none;
+}
+
+#cjrvketnvy p {
+  margin: 0;
+  padding: 0;
+}
+
+#cjrvketnvy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#cjrvketnvy .gt_title {
+  color: #FFFFFF;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cjrvketnvy .gt_subtitle {
+  color: #FFFFFF;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cjrvketnvy .gt_heading {
+  background-color: #39423C;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #39423C;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cjrvketnvy .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #39423C;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cjrvketnvy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cjrvketnvy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cjrvketnvy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cjrvketnvy .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#cjrvketnvy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#cjrvketnvy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cjrvketnvy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cjrvketnvy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cjrvketnvy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cjrvketnvy .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrvketnvy .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#cjrvketnvy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#cjrvketnvy .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#cjrvketnvy .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrvketnvy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#cjrvketnvy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrvketnvy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cjrvketnvy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_footnotes {
+  color: #FFFFFF;
+  background-color: #39423C;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrvketnvy .gt_sourcenotes {
+  color: #FFFFFF;
+  background-color: #39423C;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrvketnvy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrvketnvy .gt_left {
+  text-align: left;
+}
+
+#cjrvketnvy .gt_center {
+  text-align: center;
+}
+
+#cjrvketnvy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cjrvketnvy .gt_font_normal {
+  font-weight: normal;
+}
+
+#cjrvketnvy .gt_font_bold {
+  font-weight: bold;
+}
+
+#cjrvketnvy .gt_font_italic {
+  font-style: italic;
+}
+
+#cjrvketnvy .gt_super {
+  font-size: 65%;
+}
+
+#cjrvketnvy .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#cjrvketnvy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#cjrvketnvy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#cjrvketnvy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#cjrvketnvy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#cjrvketnvy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#cjrvketnvy .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_heading">
+      <td colspan="7" class="gt_heading gt_title gt_font_normal" style="color: #1DB954; font-size: 32px;"><strong>TOP 10 FEID</strong></td>
+    </tr>
+    <tr class="gt_heading">
+      <td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style=""><em>Canciones más escuchadas</em></td>
+    </tr>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="🔄 Reproducciones">🔄 Reproducciones</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="💃 Bailabilidad">💃 Bailabilidad</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="😃️Positividad">😃️Positividad</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="⚡️ Energia">⚡️ Energia</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="🎸 Acustica">🎸 Acustica</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="🔊 Viveza">🔊 Viveza</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><th id="stub_1_1" scope="row" class="gt_row gt_right gt_stub">Hey Mor - Ozuna, Feid</th>
+<td headers="stub_1_1 Reproducciones" class="gt_row gt_center">674072710</td>
+<td headers="stub_1_1 Bailabilidad" class="gt_row gt_center">90</td>
+<td headers="stub_1_1 Positividad" class="gt_row gt_center">40</td>
+<td headers="stub_1_1 Energia" class="gt_row gt_center">59</td>
+<td headers="stub_1_1 Acustica" class="gt_row gt_center">0</td>
+<td headers="stub_1_1 Viveza" class="gt_row gt_center">10</td></tr>
+    <tr><th id="stub_1_2" scope="row" class="gt_row gt_right gt_stub">Feliz Cumpleaños Ferxxo - Feid</th>
+<td headers="stub_1_2 Reproducciones" class="gt_row gt_center gt_striped">601863821</td>
+<td headers="stub_1_2 Bailabilidad" class="gt_row gt_center gt_striped">87</td>
+<td headers="stub_1_2 Positividad" class="gt_row gt_center gt_striped">57</td>
+<td headers="stub_1_2 Energia" class="gt_row gt_center gt_striped">55</td>
+<td headers="stub_1_2 Acustica" class="gt_row gt_center gt_striped">10</td>
+<td headers="stub_1_2 Viveza" class="gt_row gt_center gt_striped">29</td></tr>
+    <tr><th id="stub_1_3" scope="row" class="gt_row gt_right gt_stub">Yandel 150 - Yandel, Feid</th>
+<td headers="stub_1_3 Reproducciones" class="gt_row gt_center">585695368</td>
+<td headers="stub_1_3 Bailabilidad" class="gt_row gt_center">78</td>
+<td headers="stub_1_3 Positividad" class="gt_row gt_center">58</td>
+<td headers="stub_1_3 Energia" class="gt_row gt_center">73</td>
+<td headers="stub_1_3 Acustica" class="gt_row gt_center">5</td>
+<td headers="stub_1_3 Viveza" class="gt_row gt_center">10</td></tr>
+    <tr><th id="stub_1_4" scope="row" class="gt_row gt_right gt_stub">LA INOCENTE - Feid, Mora</th>
+<td headers="stub_1_4 Reproducciones" class="gt_row gt_center gt_striped">477033549</td>
+<td headers="stub_1_4 Bailabilidad" class="gt_row gt_center gt_striped">76</td>
+<td headers="stub_1_4 Positividad" class="gt_row gt_center gt_striped">46</td>
+<td headers="stub_1_4 Energia" class="gt_row gt_center gt_striped">79</td>
+<td headers="stub_1_4 Acustica" class="gt_row gt_center gt_striped">31</td>
+<td headers="stub_1_4 Viveza" class="gt_row gt_center gt_striped">7</td></tr>
+    <tr><th id="stub_1_5" scope="row" class="gt_row gt_right gt_stub">Normal - Feid</th>
+<td headers="stub_1_5 Reproducciones" class="gt_row gt_center">459276435</td>
+<td headers="stub_1_5 Bailabilidad" class="gt_row gt_center">71</td>
+<td headers="stub_1_5 Positividad" class="gt_row gt_center">59</td>
+<td headers="stub_1_5 Energia" class="gt_row gt_center">56</td>
+<td headers="stub_1_5 Acustica" class="gt_row gt_center">4</td>
+<td headers="stub_1_5 Viveza" class="gt_row gt_center">27</td></tr>
+    <tr><th id="stub_1_6" scope="row" class="gt_row gt_right gt_stub">CHORRITO PA LAS ANIMAS - Feid</th>
+<td headers="stub_1_6 Reproducciones" class="gt_row gt_center gt_striped">345031710</td>
+<td headers="stub_1_6 Bailabilidad" class="gt_row gt_center gt_striped">74</td>
+<td headers="stub_1_6 Positividad" class="gt_row gt_center gt_striped">61</td>
+<td headers="stub_1_6 Energia" class="gt_row gt_center gt_striped">83</td>
+<td headers="stub_1_6 Acustica" class="gt_row gt_center gt_striped">11</td>
+<td headers="stub_1_6 Viveza" class="gt_row gt_center gt_striped">35</td></tr>
+    <tr><th id="stub_1_7" scope="row" class="gt_row gt_right gt_stub">Classy 101 - Feid, Young Miko</th>
+<td headers="stub_1_7 Reproducciones" class="gt_row gt_center">335222234</td>
+<td headers="stub_1_7 Bailabilidad" class="gt_row gt_center">86</td>
+<td headers="stub_1_7 Positividad" class="gt_row gt_center">67</td>
+<td headers="stub_1_7 Energia" class="gt_row gt_center">66</td>
+<td headers="stub_1_7 Acustica" class="gt_row gt_center">14</td>
+<td headers="stub_1_7 Viveza" class="gt_row gt_center">12</td></tr>
+    <tr><th id="stub_1_8" scope="row" class="gt_row gt_right gt_stub">ULTRA SOLO REMIX - De La Ghetto, Feid, Polima WestCoast, Paloma Mami, Pailita</th>
+<td headers="stub_1_8 Reproducciones" class="gt_row gt_center gt_striped">279717388</td>
+<td headers="stub_1_8 Bailabilidad" class="gt_row gt_center gt_striped">91</td>
+<td headers="stub_1_8 Positividad" class="gt_row gt_center gt_striped">59</td>
+<td headers="stub_1_8 Energia" class="gt_row gt_center gt_striped">82</td>
+<td headers="stub_1_8 Acustica" class="gt_row gt_center gt_striped">8</td>
+<td headers="stub_1_8 Viveza" class="gt_row gt_center gt_striped">6</td></tr>
+    <tr><th id="stub_1_9" scope="row" class="gt_row gt_right gt_stub">Ferxxo 100 - Feid</th>
+<td headers="stub_1_9 Reproducciones" class="gt_row gt_center">278920007</td>
+<td headers="stub_1_9 Bailabilidad" class="gt_row gt_center">70</td>
+<td headers="stub_1_9 Positividad" class="gt_row gt_center">58</td>
+<td headers="stub_1_9 Energia" class="gt_row gt_center">57</td>
+<td headers="stub_1_9 Acustica" class="gt_row gt_center">25</td>
+<td headers="stub_1_9 Viveza" class="gt_row gt_center">15</td></tr>
+    <tr><th id="stub_1_10" scope="row" class="gt_row gt_right gt_stub">Pantysito - Feid, Alejo, Robi</th>
+<td headers="stub_1_10 Reproducciones" class="gt_row gt_center gt_striped">273005485</td>
+<td headers="stub_1_10 Bailabilidad" class="gt_row gt_center gt_striped">83</td>
+<td headers="stub_1_10 Positividad" class="gt_row gt_center gt_striped">63</td>
+<td headers="stub_1_10 Energia" class="gt_row gt_center gt_striped">74</td>
+<td headers="stub_1_10 Acustica" class="gt_row gt_center gt_striped">14</td>
+<td headers="stub_1_10 Viveza" class="gt_row gt_center gt_striped">16</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-8-2">
+<p>A continuación, es posible descubrir los éxitos más destacados de Ferxxo mientras se filtran y se ordenan sus canciones según la cantidad de reproducciones. Esta tabla muestra las canciones más populares, abordando aspectos como reproducciones, bailabilidad, positividad, energía, acústica y viveza.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Identificar las canciones más populares de Feid.</p></li>
+<li><p><strong>Método</strong>: Ordenar las canciones de Feid por número de reproducciones y seleccionar las 10 principales.</p></li>
+</ul>
+</div>
+<div id="tabset-8-3">
+<p>Con esta tabla, hemos querido reflejar las 10 canciones mejor acogidas por los oyentes, además de mostrar las características individuales de cada canción.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="explorando-en-profundidad-las-características-del-top-10-de-ferxxo" class="slide level3">
+<h3>Explorando en profundidad las características del TOP 10 de Ferxxo</h3>
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Gráfico</a></li><li><a href="#tabset-9-2">Metodología</a></li><li><a href="#tabset-9-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-14-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-9-2">
+<p>En este apartado analizamos las canciones de Ferxxo mediante un gráfico de radar que resalta sus características distintivas. Este gráfico nos permiten apreciar la bailabilidad, positividad, energía, acústica y viveza presentes en sus canciones.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Analizar en detalle las características musicales de las canciones más populares de Feid.</p></li>
+<li><p><strong>Método</strong>: Creación de un gráfico de radar para visualizar las características como bailabilidad, positividad, energía, etc, asignando a cada canción un color.</p></li>
+</ul>
+</div>
+<div id="tabset-9-3">
+<p>Al profundizar en las características del TOP 10 de Ferxxo mediante el uso de un gráfico de radar, podemos obtener una visión detallada de sus peculiaridades. Esto también se puede observar en la tabla, pero aquí de manera más visual.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="viaje-a-través-de-las-características-individuales-de-nuestras-canciones-favoritas" class="slide level3">
+<h3>Viaje a través de las características individuales de nuestras canciones favoritas</h3>
+<div class="panel-tabset">
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Gráfico</a></li><li><a href="#tabset-10-2">Metodología</a></li><li><a href="#tabset-10-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-595affc4f25ab85bf888" style="width:100%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-595affc4f25ab85bf888">{"x":{"data":[{"x":[5,3,10,6,7,1,2,9,4,8],"y":[90,87,78,76,71,74,86,91,70,83],"text":["Cancion: Hey Mor<br />Bailabilidad: 90<br />colour: Bailabilidad<br />Bailabilidad: 90","Cancion: Feliz Cumpleaños Ferxxo<br />Bailabilidad: 87<br />colour: Bailabilidad<br />Bailabilidad: 87","Cancion: Yandel 150<br />Bailabilidad: 78<br />colour: Bailabilidad<br />Bailabilidad: 78","Cancion: LA INOCENTE<br />Bailabilidad: 76<br />colour: Bailabilidad<br />Bailabilidad: 76","Cancion: Normal<br />Bailabilidad: 71<br />colour: Bailabilidad<br />Bailabilidad: 71","Cancion: CHORRITO PA LAS ANIMAS<br />Bailabilidad: 74<br />colour: Bailabilidad<br />Bailabilidad: 74","Cancion: Classy 101<br />Bailabilidad: 86<br />colour: Bailabilidad<br />Bailabilidad: 86","Cancion: ULTRA SOLO REMIX<br />Bailabilidad: 91<br />colour: Bailabilidad<br />Bailabilidad: 91","Cancion: Ferxxo 100<br />Bailabilidad: 70<br />colour: Bailabilidad<br />Bailabilidad: 70","Cancion: Pantysito<br />Bailabilidad: 83<br />colour: Bailabilidad<br />Bailabilidad: 83"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(160,32,240,1)","opacity":0.69999999999999996,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(160,32,240,1)"}},"hoveron":"points","name":"Bailabilidad","legendgroup":"Bailabilidad","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[10,29,10,7,27,35,12,6,15,16],"text":["Cancion: Hey Mor<br />Viveza: 10<br />colour: Viveza<br />Viveza: 10","Cancion: Feliz Cumpleaños Ferxxo<br />Viveza: 29<br />colour: Viveza<br />Viveza: 29","Cancion: Yandel 150<br />Viveza: 10<br />colour: Viveza<br />Viveza: 10","Cancion: LA INOCENTE<br />Viveza:  7<br />colour: Viveza<br />Viveza: 7","Cancion: Normal<br />Viveza: 27<br />colour: Viveza<br />Viveza: 27","Cancion: CHORRITO PA LAS ANIMAS<br />Viveza: 35<br />colour: Viveza<br />Viveza: 35","Cancion: Classy 101<br />Viveza: 12<br />colour: Viveza<br />Viveza: 12","Cancion: ULTRA SOLO REMIX<br />Viveza:  6<br />colour: Viveza<br />Viveza: 6","Cancion: Ferxxo 100<br />Viveza: 15<br />colour: Viveza<br />Viveza: 15","Cancion: Pantysito<br />Viveza: 16<br />colour: Viveza<br />Viveza: 16"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,255,1)","opacity":0.69999999999999996,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,255,1)"}},"hoveron":"points","name":"Viveza","legendgroup":"Viveza","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[40,57,58,46,59,61,67,59,58,63],"text":["Cancion: Hey Mor<br />Positividad: 40<br />colour: Positividad<br />Positividad: 40","Cancion: Feliz Cumpleaños Ferxxo<br />Positividad: 57<br />colour: Positividad<br />Positividad: 57","Cancion: Yandel 150<br />Positividad: 58<br />colour: Positividad<br />Positividad: 58","Cancion: LA INOCENTE<br />Positividad: 46<br />colour: Positividad<br />Positividad: 46","Cancion: Normal<br />Positividad: 59<br />colour: Positividad<br />Positividad: 59","Cancion: CHORRITO PA LAS ANIMAS<br />Positividad: 61<br />colour: Positividad<br />Positividad: 61","Cancion: Classy 101<br />Positividad: 67<br />colour: Positividad<br />Positividad: 67","Cancion: ULTRA SOLO REMIX<br />Positividad: 59<br />colour: Positividad<br />Positividad: 59","Cancion: Ferxxo 100<br />Positividad: 58<br />colour: Positividad<br />Positividad: 58","Cancion: Pantysito<br />Positividad: 63<br />colour: Positividad<br />Positividad: 63"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,192,203,1)","opacity":0.69999999999999996,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(255,192,203,1)"}},"hoveron":"points","name":"Positividad","legendgroup":"Positividad","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[59,55,73,79,56,83,66,82,57,74],"text":["Cancion: Hey Mor<br />Energia: 59<br />colour: Energia<br />Energia: 59","Cancion: Feliz Cumpleaños Ferxxo<br />Energia: 55<br />colour: Energia<br />Energia: 55","Cancion: Yandel 150<br />Energia: 73<br />colour: Energia<br />Energia: 73","Cancion: LA INOCENTE<br />Energia: 79<br />colour: Energia<br />Energia: 79","Cancion: Normal<br />Energia: 56<br />colour: Energia<br />Energia: 56","Cancion: CHORRITO PA LAS ANIMAS<br />Energia: 83<br />colour: Energia<br />Energia: 83","Cancion: Classy 101<br />Energia: 66<br />colour: Energia<br />Energia: 66","Cancion: ULTRA SOLO REMIX<br />Energia: 82<br />colour: Energia<br />Energia: 82","Cancion: Ferxxo 100<br />Energia: 57<br />colour: Energia<br />Energia: 57","Cancion: Pantysito<br />Energia: 74<br />colour: Energia<br />Energia: 74"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,255,0,1)","opacity":0.69999999999999996,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,255,0,1)"}},"hoveron":"points","name":"Energia","legendgroup":"Energia","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[0,10,5,31,4,11,14,8,25,14],"text":["Cancion: Hey Mor<br />Acustica:  0<br />colour: Acustica<br />Acustica: 0","Cancion: Feliz Cumpleaños Ferxxo<br />Acustica: 10<br />colour: Acustica<br />Acustica: 10","Cancion: Yandel 150<br />Acustica:  5<br />colour: Acustica<br />Acustica: 5","Cancion: LA INOCENTE<br />Acustica: 31<br />colour: Acustica<br />Acustica: 31","Cancion: Normal<br />Acustica:  4<br />colour: Acustica<br />Acustica: 4","Cancion: CHORRITO PA LAS ANIMAS<br />Acustica: 11<br />colour: Acustica<br />Acustica: 11","Cancion: Classy 101<br />Acustica: 14<br />colour: Acustica<br />Acustica: 14","Cancion: ULTRA SOLO REMIX<br />Acustica:  8<br />colour: Acustica<br />Acustica: 8","Cancion: Ferxxo 100<br />Acustica: 25<br />colour: Acustica<br />Acustica: 25","Cancion: Pantysito<br />Acustica: 14<br />colour: Acustica<br />Acustica: 14"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(127,255,212,1)","opacity":0.69999999999999996,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(127,255,212,1)"}},"hoveron":"points","name":"Acustica","legendgroup":"Acustica","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[74,86,87,70,90,76,71,83,91,78],"text":["Cancion: CHORRITO PA LAS ANIMAS<br />Bailabilidad: 74","Cancion: Classy 101<br />Bailabilidad: 86","Cancion: Feliz Cumpleaños Ferxxo<br />Bailabilidad: 87","Cancion: Ferxxo 100<br />Bailabilidad: 70","Cancion: Hey Mor<br />Bailabilidad: 90","Cancion: LA INOCENTE<br />Bailabilidad: 76","Cancion: Normal<br />Bailabilidad: 71","Cancion: Pantysito<br />Bailabilidad: 83","Cancion: ULTRA SOLO REMIX<br />Bailabilidad: 91","Cancion: Yandel 150<br />Bailabilidad: 78"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(160,32,240,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[35,12,29,15,10,7,27,16,6,10],"text":["Cancion: CHORRITO PA LAS ANIMAS<br />Viveza: 35","Cancion: Classy 101<br />Viveza: 12","Cancion: Feliz Cumpleaños Ferxxo<br />Viveza: 29","Cancion: Ferxxo 100<br />Viveza: 15","Cancion: Hey Mor<br />Viveza: 10","Cancion: LA INOCENTE<br />Viveza:  7","Cancion: Normal<br />Viveza: 27","Cancion: Pantysito<br />Viveza: 16","Cancion: ULTRA SOLO REMIX<br />Viveza:  6","Cancion: Yandel 150<br />Viveza: 10"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(0,0,255,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[61,67,57,58,40,46,59,63,59,58],"text":["Cancion: CHORRITO PA LAS ANIMAS<br />Positividad: 61","Cancion: Classy 101<br />Positividad: 67","Cancion: Feliz Cumpleaños Ferxxo<br />Positividad: 57","Cancion: Ferxxo 100<br />Positividad: 58","Cancion: Hey Mor<br />Positividad: 40","Cancion: LA INOCENTE<br />Positividad: 46","Cancion: Normal<br />Positividad: 59","Cancion: Pantysito<br />Positividad: 63","Cancion: ULTRA SOLO REMIX<br />Positividad: 59","Cancion: Yandel 150<br />Positividad: 58"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(255,192,203,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[83,66,55,57,59,79,56,74,82,73],"text":["Cancion: CHORRITO PA LAS ANIMAS<br />Energia: 83","Cancion: Classy 101<br />Energia: 66","Cancion: Feliz Cumpleaños Ferxxo<br />Energia: 55","Cancion: Ferxxo 100<br />Energia: 57","Cancion: Hey Mor<br />Energia: 59","Cancion: LA INOCENTE<br />Energia: 79","Cancion: Normal<br />Energia: 56","Cancion: Pantysito<br />Energia: 74","Cancion: ULTRA SOLO REMIX<br />Energia: 82","Cancion: Yandel 150<br />Energia: 73"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(0,255,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2,3,4,5,6,7,8,9,10],"y":[11,14,10,25,0,31,4,14,8,5],"text":["Cancion: CHORRITO PA LAS ANIMAS<br />Acustica: 11","Cancion: Classy 101<br />Acustica: 14","Cancion: Feliz Cumpleaños Ferxxo<br />Acustica: 10","Cancion: Ferxxo 100<br />Acustica: 25","Cancion: Hey Mor<br />Acustica:  0","Cancion: LA INOCENTE<br />Acustica: 31","Cancion: Normal<br />Acustica:  4","Cancion: Pantysito<br />Acustica: 14","Cancion: ULTRA SOLO REMIX<br />Acustica:  8","Cancion: Yandel 150<br />Acustica:  5"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(127,255,212,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[90.019999999999996,87.019999999999996,78.019999999999996,76.019999999999996,71.019999999999996,74.019999999999996,86.019999999999996,91.019999999999996,70.019999999999996,83.019999999999996],"text":[90,87,78,76,71,74,86,91,70,83],"hovertext":["Cancion: Hey Mor<br />Bailabilidad + 0.02: 90.02<br />round(Bailabilidad, 2): 90","Cancion: Feliz Cumpleaños Ferxxo<br />Bailabilidad + 0.02: 87.02<br />round(Bailabilidad, 2): 87","Cancion: Yandel 150<br />Bailabilidad + 0.02: 78.02<br />round(Bailabilidad, 2): 78","Cancion: LA INOCENTE<br />Bailabilidad + 0.02: 76.02<br />round(Bailabilidad, 2): 76","Cancion: Normal<br />Bailabilidad + 0.02: 71.02<br />round(Bailabilidad, 2): 71","Cancion: CHORRITO PA LAS ANIMAS<br />Bailabilidad + 0.02: 74.02<br />round(Bailabilidad, 2): 74","Cancion: Classy 101<br />Bailabilidad + 0.02: 86.02<br />round(Bailabilidad, 2): 86","Cancion: ULTRA SOLO REMIX<br />Bailabilidad + 0.02: 91.02<br />round(Bailabilidad, 2): 91","Cancion: Ferxxo 100<br />Bailabilidad + 0.02: 70.02<br />round(Bailabilidad, 2): 70","Cancion: Pantysito<br />Bailabilidad + 0.02: 83.02<br />round(Bailabilidad, 2): 83"],"textfont":{"size":11.338582677165356,"color":"rgba(160,32,240,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[10.02,29.02,10.02,7.0199999999999996,27.02,35.020000000000003,12.02,6.0199999999999996,15.02,16.02],"text":[10,29,10,7,27,35,12,6,15,16],"hovertext":["Cancion: Hey Mor<br />Viveza + 0.02: 10.02<br />round(Viveza, 2): 10","Cancion: Feliz Cumpleaños Ferxxo<br />Viveza + 0.02: 29.02<br />round(Viveza, 2): 29","Cancion: Yandel 150<br />Viveza + 0.02: 10.02<br />round(Viveza, 2): 10","Cancion: LA INOCENTE<br />Viveza + 0.02:  7.02<br />round(Viveza, 2):  7","Cancion: Normal<br />Viveza + 0.02: 27.02<br />round(Viveza, 2): 27","Cancion: CHORRITO PA LAS ANIMAS<br />Viveza + 0.02: 35.02<br />round(Viveza, 2): 35","Cancion: Classy 101<br />Viveza + 0.02: 12.02<br />round(Viveza, 2): 12","Cancion: ULTRA SOLO REMIX<br />Viveza + 0.02:  6.02<br />round(Viveza, 2):  6","Cancion: Ferxxo 100<br />Viveza + 0.02: 15.02<br />round(Viveza, 2): 15","Cancion: Pantysito<br />Viveza + 0.02: 16.02<br />round(Viveza, 2): 16"],"textfont":{"size":11.338582677165356,"color":"rgba(0,0,255,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[40.020000000000003,57.020000000000003,58.020000000000003,46.020000000000003,59.020000000000003,61.020000000000003,67.019999999999996,59.020000000000003,58.020000000000003,63.020000000000003],"text":[40,57,58,46,59,61,67,59,58,63],"hovertext":["Cancion: Hey Mor<br />Positividad + 0.02: 40.02<br />round(Positividad, 2): 40","Cancion: Feliz Cumpleaños Ferxxo<br />Positividad + 0.02: 57.02<br />round(Positividad, 2): 57","Cancion: Yandel 150<br />Positividad + 0.02: 58.02<br />round(Positividad, 2): 58","Cancion: LA INOCENTE<br />Positividad + 0.02: 46.02<br />round(Positividad, 2): 46","Cancion: Normal<br />Positividad + 0.02: 59.02<br />round(Positividad, 2): 59","Cancion: CHORRITO PA LAS ANIMAS<br />Positividad + 0.02: 61.02<br />round(Positividad, 2): 61","Cancion: Classy 101<br />Positividad + 0.02: 67.02<br />round(Positividad, 2): 67","Cancion: ULTRA SOLO REMIX<br />Positividad + 0.02: 59.02<br />round(Positividad, 2): 59","Cancion: Ferxxo 100<br />Positividad + 0.02: 58.02<br />round(Positividad, 2): 58","Cancion: Pantysito<br />Positividad + 0.02: 63.02<br />round(Positividad, 2): 63"],"textfont":{"size":11.338582677165356,"color":"rgba(255,192,203,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[59.020000000000003,55.020000000000003,73.019999999999996,79.019999999999996,56.020000000000003,83.019999999999996,66.019999999999996,82.019999999999996,57.020000000000003,74.019999999999996],"text":[59,55,73,79,56,83,66,82,57,74],"hovertext":["Cancion: Hey Mor<br />Energia + 0.02: 59.02<br />round(Energia, 2): 59","Cancion: Feliz Cumpleaños Ferxxo<br />Energia + 0.02: 55.02<br />round(Energia, 2): 55","Cancion: Yandel 150<br />Energia + 0.02: 73.02<br />round(Energia, 2): 73","Cancion: LA INOCENTE<br />Energia + 0.02: 79.02<br />round(Energia, 2): 79","Cancion: Normal<br />Energia + 0.02: 56.02<br />round(Energia, 2): 56","Cancion: CHORRITO PA LAS ANIMAS<br />Energia + 0.02: 83.02<br />round(Energia, 2): 83","Cancion: Classy 101<br />Energia + 0.02: 66.02<br />round(Energia, 2): 66","Cancion: ULTRA SOLO REMIX<br />Energia + 0.02: 82.02<br />round(Energia, 2): 82","Cancion: Ferxxo 100<br />Energia + 0.02: 57.02<br />round(Energia, 2): 57","Cancion: Pantysito<br />Energia + 0.02: 74.02<br />round(Energia, 2): 74"],"textfont":{"size":11.338582677165356,"color":"rgba(0,255,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5,3,10,6,7,1,2,9,4,8],"y":[0.02,10.02,5.0199999999999996,31.02,4.0199999999999996,11.02,14.02,8.0199999999999996,25.02,14.02],"text":[0,10,5,31,4,11,14,8,25,14],"hovertext":["Cancion: Hey Mor<br />Acustica + 0.02:  0.02<br />round(Acustica, 2):  0","Cancion: Feliz Cumpleaños Ferxxo<br />Acustica + 0.02: 10.02<br />round(Acustica, 2): 10","Cancion: Yandel 150<br />Acustica + 0.02:  5.02<br />round(Acustica, 2):  5","Cancion: LA INOCENTE<br />Acustica + 0.02: 31.02<br />round(Acustica, 2): 31","Cancion: Normal<br />Acustica + 0.02:  4.02<br />round(Acustica, 2):  4","Cancion: CHORRITO PA LAS ANIMAS<br />Acustica + 0.02: 11.02<br />round(Acustica, 2): 11","Cancion: Classy 101<br />Acustica + 0.02: 14.02<br />round(Acustica, 2): 14","Cancion: ULTRA SOLO REMIX<br />Acustica + 0.02:  8.02<br />round(Acustica, 2):  8","Cancion: Ferxxo 100<br />Acustica + 0.02: 25.02<br />round(Acustica, 2): 25","Cancion: Pantysito<br />Acustica + 0.02: 14.02<br />round(Acustica, 2): 14"],"textfont":{"size":11.338582677165356,"color":"rgba(127,255,212,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":48.146118721461193,"r":7.3059360730593621,"b":44.56621004566211,"l":37.260273972602747},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Gráfico de Dispersión - Todas las Características","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,10.6],"tickmode":"array","ticktext":["CHORRITO PA LAS ANIMAS","Classy 101","Feliz Cumpleaños Ferxxo","Ferxxo 100","Hey Mor","LA INOCENTE","Normal","Pantysito","ULTRA SOLO REMIX","Yandel 150"],"tickvals":[1,2,3,4,5,6.0000000000000009,7,8,9,10],"categoryorder":"array","categoryarray":["CHORRITO PA LAS ANIMAS","Classy 101","Feliz Cumpleaños Ferxxo","Ferxxo 100","Hey Mor","LA INOCENTE","Normal","Pantysito","ULTRA SOLO REMIX","Yandel 150"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Canción","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-4.5510000000000002,95.570999999999998],"tickmode":"array","ticktext":["0","25","50","75"],"tickvals":[0,25,49.999999999999993,75],"categoryorder":"array","categoryarray":["0","25","50","75"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Valor de la Característica","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Característica","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"2d043f1a2622":{"x":{},"y":{},"colour":{},"text":{},"type":"scatter"},"2d044dbda28b":{"x":{},"y":{},"colour":{},"text":{}},"2d045cfa7b8c":{"x":{},"y":{},"colour":{},"text":{}},"2d0440c55404":{"x":{},"y":{},"colour":{},"text":{}},"2d045b0ef3d4":{"x":{},"y":{},"colour":{},"text":{}},"2d0432aa1200":{"x":{},"y":{}},"2d043b83d7fc":{"x":{},"y":{}},"2d044cd8ffea":{"x":{},"y":{}},"2d043a898310":{"x":{},"y":{}},"2d0419fbad76":{"x":{},"y":{}},"2d045a392b4d":{"x":{},"y":{},"label":{}},"2d045f49fa81":{"x":{},"y":{},"label":{}},"2d0471dd5c06":{"x":{},"y":{},"label":{}},"2d047bc4c850":{"x":{},"y":{},"label":{}},"2d04343b3bab":{"x":{},"y":{},"label":{}}},"cur_data":"2d043f1a2622","visdat":{"2d043f1a2622":["function (y) ","x"],"2d044dbda28b":["function (y) ","x"],"2d045cfa7b8c":["function (y) ","x"],"2d0440c55404":["function (y) ","x"],"2d045b0ef3d4":["function (y) ","x"],"2d0432aa1200":["function (y) ","x"],"2d043b83d7fc":["function (y) ","x"],"2d044cd8ffea":["function (y) ","x"],"2d043a898310":["function (y) ","x"],"2d0419fbad76":["function (y) ","x"],"2d045a392b4d":["function (y) ","x"],"2d045f49fa81":["function (y) ","x"],"2d0471dd5c06":["function (y) ","x"],"2d047bc4c850":["function (y) ","x"],"2d04343b3bab":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-10-2">
+<p>Exploramos de otra forma las características individuales de las canciones de Feid a través de gráficos de dispersión. Cada gráfico se centra en una característica única, desde la bailabilidad hasta la viveza, proporcionando una visión detallada y personalizada de la esencia musical de Ferxxo.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Con la representación individual de cada canción de Feid se pretende obtener una evaluación detallada de los atributos de sus canciones.</p></li>
+<li><p><strong>Método</strong>: Se utiliza un gráfico de dispersión donde cada punto representa una canción.</p></li>
+</ul>
+</div>
+<div id="tabset-10-3">
+<p>Con esto buscamos otra manera de visualizar lo mismo, pero ahora de forma visual, detallada y personalizada.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="comparación-de-popularidad-en-spotify-y-apple-music" class="slide level3">
+<h3>Comparación de popularidad en Spotify y Apple Music</h3>
+<div class="panel-tabset">
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Gráfico</a></li><li><a href="#tabset-11-2">Metodología</a></li><li><a href="#tabset-11-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-dc62471906a988fdd2a3" style="width:100%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-dc62471906a988fdd2a3">{"x":{"data":[{"orientation":"v","width":[1,0.59632107023411374,0.65919732441471568,0.31806020066889634,0.27224080267558526,0.2254180602006689,0.32207357859531771,0.23210702341137124,0,0.4508361204013378],"base":[4.5499999999999998,2.5499999999999998,9.5500000000000007,5.5499999999999998,6.5499999999999998,0.55000000000000004,1.55,8.5500000000000007,3.5499999999999998,7.5499999999999998],"x":[0.5,0.29816053511705687,0.32959866220735784,0.15903010033444817,0.13612040133779263,0.11270903010033445,0.16103678929765886,0.11605351170568562,0,0.2254180602006689],"y":[0.90000000000000036,0.90000000000000036,0.89999999999999858,0.90000000000000036,0.90000000000000036,0.89999999999999991,0.90000000000000013,0.89999999999999858,0.90000000000000036,0.89999999999999947],"text":["factor(Cancion): 0.9<br />in_spotify_playlists_norm: 1.0000000<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.5963211<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.6591973<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.3180602<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.2722408<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.2254181<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.3220736<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.2321070<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.0000000<br />fill: Spotify","factor(Cancion): 0.9<br />in_spotify_playlists_norm: 0.4508361<br />fill: Spotify"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(29,185,84,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Spotify","legendgroup":"Spotify","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[1,0.58139534883720934,0.62790697674418605,0.18604651162790697,0.62790697674418605,0.20930232558139536,0.53488372093023251,0.39534883720930231,0,0.67441860465116277],"base":[4.5499999999999998,2.5499999999999998,9.5500000000000007,5.5499999999999998,6.5499999999999998,0.55000000000000004,1.55,8.5500000000000007,3.5499999999999998,7.5499999999999998],"x":[0.5,0.29069767441860467,0.31395348837209303,0.093023255813953487,0.31395348837209303,0.10465116279069768,0.26744186046511625,0.19767441860465115,0,0.33720930232558138],"y":[0.90000000000000036,0.90000000000000036,0.89999999999999858,0.90000000000000036,0.90000000000000036,0.89999999999999991,0.90000000000000013,0.89999999999999858,0.90000000000000036,0.89999999999999947],"text":["factor(Cancion): 0.9<br />in_apple_playlists_norm: 1.0000000<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.5813953<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.6279070<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.1860465<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.6279070<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.2093023<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.5348837<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.3953488<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.0000000<br />fill: Apple Music","factor(Cancion): 0.9<br />in_apple_playlists_norm: 0.6744186<br />fill: Apple Music"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(255,47,84,0.5)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Apple Music","legendgroup":"Apple Music","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":48.146118721461193,"r":7.3059360730593621,"b":44.56621004566211,"l":160.00000000000003},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Popularidad normalizada por canción en Spotify y Apple Music","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.050000000000000003,1.05],"tickmode":"array","ticktext":["0.00","0.25","0.50","0.75","1.00"],"tickvals":[0,0.25,0.5,0.75,1],"categoryorder":"array","categoryarray":["0.00","0.25","0.50","0.75","1.00"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Playlists normalizadas","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,10.6],"tickmode":"array","ticktext":["CHORRITO PA LAS ANIMAS","Classy 101","Feliz Cumpleaños Ferxxo","Ferxxo 100","Hey Mor","LA INOCENTE","Normal","Pantysito","ULTRA SOLO REMIX","Yandel 150"],"tickvals":[1,2,3,4,5,6.0000000000000009,7,8,9,10],"categoryorder":"array","categoryarray":["CHORRITO PA LAS ANIMAS","Classy 101","Feliz Cumpleaños Ferxxo","Ferxxo 100","Hey Mor","LA INOCENTE","Normal","Pantysito","ULTRA SOLO REMIX","Yandel 150"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Canción","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"fill","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"2d04514a4b17":{"y":{},"x":{},"fill":{},"type":"bar"},"2d046487fcb2":{"y":{},"x":{},"fill":{}}},"cur_data":"2d04514a4b17","visdat":{"2d04514a4b17":["function (y) ","x"],"2d046487fcb2":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-11-2">
+<p>Examinamos la popularidad de las canciones de Feid en Spotify y Apple Music a través de un gráfico interactivo. Este análisis incluye la presencia en playlists de ambas plataformas, ofreciendo una visión personalizada de cómo las canciones de Ferxxo se posicionan en el mundo de la música en la era digital. Al contrario que en la primera parte del trabajo, se prescinde de Deezer para ver de forma más fácil la comparación.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Comparar la popularidad de las canciones de Feid en Spotify y Apple Music.</p></li>
+<li><p><strong>Método</strong>: Uso de gráficos de barras para visualizar la presencia en playlists de ambas plataformas.</p></li>
+</ul>
+</div>
+<div id="tabset-11-3">
+<p>La comparación de la popularidad en Spotify y Apple Music proporciona una visión valiosa de cómo las canciones de Ferxxo se posicionan en el ámbito digital. Al normalizar los datos, dado que cada plataforma difiere significativamente en el número de oyentes y la cantidad de playlists, podemos observar, por ejemplo, que “Yandel 150” destacó más en Spotify, mientras que “Normal” lo hizo en Apple Music.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="descubriendo-colaboradores-musicales-en-las-canciones-de-feid" class="slide level3">
+<h3>Descubriendo colaboradores musicales en las canciones de Feid</h3>
+<div class="panel-tabset">
+<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">Word Cloud</a></li><li><a href="#tabset-12-2">Metodología</a></li><li><a href="#tabset-12-3">Resultado</a></li></ul>
+<div class="tab-content">
+<div id="tabset-12-1">
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="my_slides_BigData_files/figure-revealjs/unnamed-chunk-17-1.png" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-12-2">
+<p>En esta sección, nos sumergimos en la exploración visual de los colaboradores que han dejado su huella en las canciones de Ferxxo. A través de un intrigante Word Cloud, cada palabra representa a un artista colaborador, y en diferentes colores. Esta representación gráfica nos brinda una visión única y artística de las conexiones que Ferxxo ha cultivado en su viaje musical.</p>
+<ul>
+<li><p><strong>Objetivo</strong>: Investigar las colaboraciones musicales en las canciones de Feid.</p></li>
+<li><p><strong>Método</strong>: Creación de un Word Cloud para representar visualmente a los artistas colaboradores.</p></li>
+</ul>
+</div>
+<div id="tabset-12-3">
+<p>Con la visualización a través del Word Cloud, se puede apreciar que Feid ha colaborado con artistas como Young Miko, Ozuna, Yandel, entre otros.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusión-de-tendencias-universales-a-las-notas-únicas-de-feid" class="slide level3">
+<h3>Conclusión: De tendencias universales a las notas únicas de Feid</h3>
+<p>Hemos explorado, en primer lugar, la distribución global de reproducciones, las dinámicas estacionales, la influencia del éxito en las colaboraciones y, sobre todo, qué pueden decirnos características asignadas por Spotify a las canciones, tanto en su propio éxito medido en reproducciones, como su clasificación por similitud a través de clusters.</p>
+<p>Posteriormente nos hemos sumergido en el universo sonoro distintivo de Ferxxo, desde sus éxitos envolventes hasta las colaboraciones tejidas en su trayectoria.Y como en nuestros datos no lo tenemos porque es muy reciente, compartimos por aquí una de las canciones que más esta sonando últimamente:</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/ZA7ZKB8Mo9k" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer footer-default">
+<p>Slides hechas con <a href="https://quarto.org/">Quarto</a></p>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copiado");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copiado");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var filterRegex = new RegExp("https:\/\/ctorm27\.github\.io\/trabajo_BigData_equipo\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+              // target, if specified
+              link.setAttribute("target", "_blank");
+          }
+        }
+    });
+    </script>
+    
+
+</body></html>
